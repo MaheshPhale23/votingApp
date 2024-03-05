@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <a
+    routerLink="/home"
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>pan_tool</mat-icon>
+  </a>
+  <span> One Nation One Election </span>
+  <span class="example-spacer"></span>
+  <a
+    (click)="logout()"
+    [routerLink]="'/login'"
+    class="example-icon favorite-icon logout"
+    aria-label="Example icon-button with heart icon"
+  >
+  Logout
+  </a>
+</mat-toolbar>

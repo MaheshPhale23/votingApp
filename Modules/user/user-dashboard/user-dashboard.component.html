@@ -1,0 +1,14 @@
+
+<div class="container mt-5">
+  <h1>Hi Welcome Mahesh Phale</h1>
+  <h2 class="mb-4" style="font-size: 22px;">Vote for a Candidate</h2>
+  <form (ngSubmit)="submitVote()">
+    <div class="form-group">
+      <div class="candidate mb-2" *ngFor="let c of Candidates">
+        <input type="radio" id="{{c.candidateId}}" name="candidate" value="{{c.candidateId}}" [(ngModel)]="selectedCandidateId">
+        <label for="{{c.candidateId}}" class="mx-2 can">{{c.name}}</label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2" [disabled]="voteSubmitted">Vote</button>
+  </form>
+</div>

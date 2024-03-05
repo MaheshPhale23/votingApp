@@ -1,0 +1,84 @@
+.footer-area{
+  background-color: #051922;
+  color: #fff;
+  padding: 150px 0;
+}
+.footerBox h2{
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 20px;
+  color: #fff;
+  margin: 0 0 1.25rem 0;
+}
+.footerBox h2::after{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #F28123;
+  content: "";
+}
+.footerBox p{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.1px;
+  color: #fff;
+  opacity: 0.7;
+  line-height: 1.8;
+}
+.footerBox ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footerBox ul li{
+  position: relative;
+  padding-left: 20px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+.footerBox ul li a{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footerBox ul li::before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #F28123;
+}
+input{
+  border: none;
+  background-color: #012738;
+  width: 78%;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #fff;
+  overflow: visible;
+}
+button{
+  width: 20%;
+  border: none;
+  background-color: #012738;
+  color: #F28123;
+  padding: 14px 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 5px;
+}
+button:hover{
+  background-color: #F28123;
+  color: #051922;
+}

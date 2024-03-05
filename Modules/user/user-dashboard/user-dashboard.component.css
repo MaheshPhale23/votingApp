@@ -1,0 +1,6 @@
+.candidate input[type="radio"] {
+  transform: scale(1.6);
+}
+.can{
+  font-size: 19px;
+}

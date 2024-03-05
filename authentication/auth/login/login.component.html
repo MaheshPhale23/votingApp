@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<div class="login_form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <mat-card class="card">
+          <form (ngSubmit)="onLogin()">
+            <div class="logo text-center">
+              <img src="/assets/images/icons8-user-group-94.png" alt="">
+              <h1>LOGIN HERE !!</h1>
+            </div>
+            <div class=" abc">
+              <label for="exampleFormControlInput1" class="form-label">Username: </label>
+              <input type="text" [(ngModel)]="userdata.username" name="Username" class="form-control input_1" id="exampleFormControlInput1" placeholder="username must be unique*">
+            </div>
+            <div class="hint_user">
+              <mat-hint>Username must be unique</mat-hint>
+            </div>
+            <div class=" abc">
+              <label for="exampleFormControlInput1" class="form-label">Password: </label>
+              <input type="password" [(ngModel)]="userdata.password" name="Password" class="form-control input_1" id="exampleFormControlInput2" placeholder="password*">
+            </div>
+            <div class="hint_pass">
+              <mat-hint>Password should be between 3 to 8</mat-hint>
+            </div>
+            <div class="login_btn">
+              <button class="btn btn-success">
+                Login
+              </button>
+            </div>
+            <div style="width: 100%; text-align: center; margin-top: 20px;">
+              <span style="margin-left: 15px;"
+              >don't have an account <a routerLink="/register">REGISTER</a></span>
+            </div>
+          </form>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

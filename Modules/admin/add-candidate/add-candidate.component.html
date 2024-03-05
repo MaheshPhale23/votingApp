@@ -1,0 +1,19 @@
+<mat-card>
+  <h1 style="text-align: center;">Add Candidate</h1>
+  <mat-card-content>
+    <div class="bootstrap-wrapper">
+      <div class="row">
+        <!-- {{candidate | json}} -->
+        <div class="col-md-8 offset-md-2">
+          <form (ngSubmit)="OnCandidateAdd()">
+            <div class="form-group mb-2">
+              <label for="candidate_name" class="mb-1">Candidate Name:</label>
+              <input type="text" [(ngModel)]="candidate.name" class="form-control" id="candidate_name" name="candidate_name" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Add Candidate</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

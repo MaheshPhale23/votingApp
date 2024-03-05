@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+<div class="login_form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <mat-card class="card">
+          <form (ngSubmit)="onRegister()">
+            <div class="logo text-center">
+              <img src="/assets/images/icons8-bookmark-64.png" alt="">
+              <h1 style="margin-top: 15px;">REGISTER HERE !!</h1>
+            </div>
+            <div class="mb-3 abc">
+              <input type="text" name="Username" [(ngModel)]="userdata.username" class="form-control input_1" id="exampleFormControlInput1" placeholder="Username">
+            </div>
+            <div class="mb-3 abc">
+              <input type="password" name="Password" [(ngModel)]="userdata.password" class="form-control input_1" id="exampleFormControlInput2" placeholder="Password">
+            </div>
+            <div class="mb-3 abc">
+              <input type="text" name="FirstName" [(ngModel)]="userdata.firstName" class="form-control input_1" id="exampleFormControlInput3" placeholder="FirstName">
+            </div>
+            <div class="mb-3 abc">
+              <input type="text" name="LastName" [(ngModel)]="userdata.lastName" class="form-control input_1" id="exampleFormControlInput4" placeholder="LastName">
+            </div>
+            <div class="mb-3 abc">
+              <input type="email" name="Email" [(ngModel)]="userdata.email" class="form-control input_1" id="exampleFormControlInput5" placeholder="Email">
+            </div>
+            <div class="mb-3 abc">
+              <input type="number" name="PhoneNo" [(ngModel)]="userdata.phone" class="form-control input_1" id="exampleFormControlInput6" placeholder="PhoneNo">
+            </div>
+            <div class="login_btn">
+              <button class="btn btn-primary">
+                Register
+              </button>
+            </div>
+            <div style="width: 100%; text-align: center; margin-top: 20px;">
+              <span style="margin-left: 15px;"
+              >Already have an account <a routerLink="/login">LOGIN</a></span>
+            </div>
+          </form>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

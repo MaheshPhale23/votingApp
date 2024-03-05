@@ -1,0 +1,35 @@
+<mat-card class="header">
+  <mat-card-content>
+    <div class="bootstrap-wrapper">
+      <div class="container">
+        <div class="container text-center">
+          <h1>Candidate List</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th>Candidate Id</th>
+                  <th>Candidate Name</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let candidate of candidates">
+                <tr>
+                  <td>{{candidate.candidateId}}</td>
+                  <td>{{candidate.name}}</td>
+                  <td>
+                    <button class="btn btn-success mx-1">Edit</button>
+                    <button class="btn btn-danger mx-1"
+                    (click)="onDeleteHandler(candidate.candidateId)">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

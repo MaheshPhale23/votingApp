@@ -1,0 +1,29 @@
+<mat-card>
+  <h2 style="text-align: center;">Candidate Vote Count</h2>
+  <mat-card-content>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th>Candidate Id</th>
+                  <th>Candidate Name</th>
+                  <th>Total Votes</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let candidate of candidates">
+                <tr>
+                  <td>{{ candidate.candidateId }}</td> <!-- Display candidate id -->
+                  <td>{{ candidate.name }}</td> <!-- Display candidate name -->
+                  <td>{{ candidateVoteCounts[candidate.candidateId] }}</td> <!-- Display vote count -->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+

@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <a
+    routerLink="/home"
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>pan_tool</mat-icon>
+  </a>
+  <span> One Nation One Election </span>
+  <span class="example-spacer"></span>
+  <a
+    [routerLink]="'/login'"
+    mat-icon-button
+    class="example-icon favorite-icon login"
+    aria-label="Example icon-button with heart icon"
+  >
+    Login
+  </a>
+  <a
+    [routerLink]="'/register'"
+    mat-icon-button
+    class="example-icon favorite-icon mr20 ml20 register"
+    aria-label="Example icon-button with heart icon"
+  >
+    Register
+  </a>
+</mat-toolbar>

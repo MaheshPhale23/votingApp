@@ -1,0 +1,7 @@
+.list-item-content{
+  display: flex;
+  align-items: center;
+}
+.list-item-content span{
+  margin-left: 10px;
+}
